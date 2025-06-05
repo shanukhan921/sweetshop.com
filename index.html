@@ -1,0 +1,582 @@
+ <!DOCTYPE html>
+<html lang="en" oncontextmenu="window.alert('Right Click Not Allowed');return false">
+<head>
+<title>
+sweetshop
+</title>
+<style>
+header{
+width:100%;
+height:50px;
+float:left;
+box-sizing:border-box;
+padding:6px;
+
+}
+
+body{
+padding:0;
+margin:0;
+}
+
+#brand{
+margin:0;
+pdding:0;
+font-family:sans-serif;
+float:left;
+margin-left:20px;
+}
+
+#tag_line{
+float:right;
+margin:0;
+pdding:0;
+margin-top:10px;
+font-family:century gothic;
+margin-right:24px;
+}
+
+nav{
+width:100%;
+height:100px;
+border-color:blue;
+border-style:solid;
+border-width:1px;
+float:left;
+background-color:blue;
+box-sizing:border-box;
+padding:30px;
+}
+#search{
+width:400px;
+height:40px;
+float:left;
+box-sizing:border-box;
+border:none;
+font-size:16px;
+padding:10px;
+}
+
+#search_btn{
+width:100px;
+height:40px;
+float:left;
+box-sizing:border-box;
+border:none;
+margin-left:3px;
+font-size:16px;
+}
+
+#menu_table{
+width:600px;
+height:40px;
+float:right;
+}
+
+#menu_item{
+background-color:white;
+width:20%;
+text-align:center;
+font-family:sans-serif;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+
+section{
+width:100%;
+height:1650px;
+float:left;
+border-color:blue;
+border-width:1px;
+border-style:solid;
+box-sizing:border-box;
+padding:30px;
+}
+
+#add{
+float:left;
+font-family:sans-serif;
+font-style:normal;
+font-weight:bold;
+}
+
+#phone{
+float:right;
+font-family:sans-serif;
+font-style:normal;
+font-weight:bold;
+}
+
+#popular-sweets-box{
+width:720px;
+height:550px;
+float:left;
+box-sizing:border-box;
+background-color:black;
+margin-top:30px;
+padding:27px;
+}
+
+#popular-sweet-title{
+color:white;
+font-family:sans-serif;
+text-align:center;
+font-size:30px;
+margin:0;
+padding:0;
+}
+
+#popular-sweet-imsges{
+width:300px;
+height:200px;
+margin:15px;
+border-width:5px;
+border-color:white;
+border-style:solid;
+box-sizing:border-box;
+}
+#rate-list-box{
+width:450px;
+height:550px;
+float:right;
+margin-top:30px;
+}
+#rate-header{
+height:50px;
+background-color:black;
+color:white;
+font-family:century gothic;
+font-size:25px;
+text-align:center;
+}
+#rate-content{
+background-color:blue;
+}
+#s-name{
+color:white;
+font-size:20px;
+font-family:century gothic;
+padding:10px;
+border-bottom-width:2px;
+border-bottom-style:solid;
+border-bottom-color:white;
+}
+#rate{
+list-style:none;
+}
+fieldset{
+width:690px;
+height:550px;
+float:left;
+margin-top:50px;
+border-width:1px;
+border-weight:solid;
+border-color:#ccc;
+padding:10px;
+
+}
+
+legend{
+font-size:30px;
+font-family:century gothic;
+font-weight:bold;
+
+}
+#order-online{
+font-size:17px;
+font-family:sans-serif;
+}
+#order-input{
+width:100%;
+height:35px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:5px;
+}
+
+textarea{
+width:100%;
+height:100px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:5px;
+}
+
+#submit-btn{
+padding:10px;
+font-size:15px;
+float:right;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+background-color:white;
+}
+#abt-us{
+width:450px;
+height:550px;
+float:right;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:68px;
+padding:13px;
+box-sizing:border-box;
+}
+#abt-title{
+font-family:sans-serif;
+font-size:30px;
+}
+#abt-text{
+text-align:justify;
+font-family:sans-serif;
+line-height:25px;
+}
+hr{
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+}
+#m-sweets{
+width:100%;
+float:left;
+box-sizing:border-box;
+}
+#more-sweets{
+text-align:center;
+font-family:century gothic;
+font-size:30px;
+
+}
+#sweets{
+width:218px;
+height:250px;
+float:left;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-right:46px;
+}
+#sweets-end{
+width:218px;
+height:250px;
+float:left;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+}
+#sweet-pic{
+width:180px;
+height:150px;
+margin:19px;
+}
+#buy-btn{
+padding:10px;
+border-width:1px;
+border-color:#ccc;
+border-style:solid;
+background-color:white;
+width:100px;
+}
+footer{
+width:100%;
+height:250px;
+float:left;
+background-color:black;
+box-sizing:border-box;
+}
+
+#contact_us{
+width:400px;
+height:250px;
+float:left;
+box-sizing:border-box;
+padding:10px;
+padding-left:30px;
+
+}
+
+#contact_title{
+color:white;
+font-family:sans-serif;
+}
+#contact_detaile{
+color:white;
+font-size:20px;
+margin-bottom:10px;
+font-style:normal;
+}
+#social_link{
+width:300px;
+height:250px;
+float:right;
+box-sizing:border-box;
+padding-left:10px;
+}
+#social_logo{
+width:60px;
+}
+#developer{
+float:left;
+color:white;
+font-size:20px;
+font-family:'ubuntu',sans-serif;
+margin-top:200px;
+margin-left:150px;
+}
+td:hover{
+	border-start-end-radius:50px;
+	border-end-start-radius:50px;
+	transition:0.5s;
+}
+
+#c{
+	text-align: center;
+}
+#m{
+	margin-top:10px;
+}
+
+
+</style>
+</head>
+<body>
+	<div id="full_site">
+<header>
+<h1 id="brand">Sweetshop.com</h1>
+<p id="tag_line">The world's largest sweets & bakerise shop</p>
+</header>
+<nav>
+<form>
+<input id="search" type="search" name="search" placeholder="Search your sweets here">
+<input type="submit" value="search" id="search_btn">
+</form>
+
+<table id="menu_table">
+<tr>
+<td id="menu_item"><a href="index.html">Home</a></td>
+<td id="menu_item"><a href="sweets.html">Sweets</a></td>
+<td id="menu_item"><a href="bakeries.html">Bakeries</a></td>
+<td id="menu_item"><a href="index.html#abt-text">About us</a></td>
+<td id="menu_item"><a href="#contact_us">Contact us</a></td>
+</tr>
+</table>
+</nav>
+
+<section>
+<address id="add">
+H-No.79,Town Sainthal Bareilly-District In Uttar Pradesh
+</address>
+<address id="phone">
+Order Online. +91 8218528345, +91 6397262725
+</address>
+<div id="popular-sweets-box">
+<h1 id="popular-sweet-title">Our Popular Sweets</h1>
+<img src="a11.jpg" alt="a11" id="popular-sweet-imsges" />
+<img src="b22.jpg" alt="b22" id="popular-sweet-imsges" />
+<img src="c33.jpg" alt="c33" id="popular-sweet-imsges" />
+<img src="d44.jpeg" alt="d44" id="popular-sweet-imsges" />
+</div>
+<table id="rate-list-box">
+<tr>
+<td id="rate-header">Sweets Name</td>
+<td id="rate-header">Price</td>
+</tr>
+<tr>
+<td id="rate-content">
+<ol>
+<li id="s-name">Gulab jamun</li>
+<li id="s-name">Barfi</li>
+<li id="s-name">Peda</li>
+<li id="s-name">Rasgulla</li>
+<li id="s-name">Mawa Roll</li>
+<li id="s-name">Laddu</li>
+<li id="s-name">Jalebi</li>
+<li id="s-name">Rass malai</li>
+<li id="s-name">Battisa</li>
+
+</ol>
+</td>
+<td id="rate-content">
+<ol id="rate">
+<li id="s-name">300kg</li>
+<li id="s-name">400kg</li>
+<li id="s-name">300kg</li>
+<li id="s-name">400kg</li>
+<li id="s-name">500kg</li>
+<li id="s-name">300kg</li>
+<li id="s-name">300kg</li>
+<li id="s-name">300kg</li>
+<li id="s-name">200kg</li>
+</ol>
+</td>
+</tr>
+</table>
+
+<fieldset id="frm_box">
+<legend>Order online</legend>
+<form id="order-online">
+Buyer name<br>
+<input type="text" name="name" id="order-input"><br><br>
+Mobile No.<br>
+<input type="number" name="mobile" id="order-input"><br><br>
+Choose sweets<br>
+<select name="choose-sweets" id="order-input">
+<option value="peda">Rasgulla</option>
+<option value="Rasgulla">Peda</option>
+<option value="Barfi">Barfi</option>
+<option value="Mawa Roll">Mawa Roll</option>
+<option value="Laddu">Laddu</option>
+<option value="Jalabi">Jalebi</option>
+
+</select><br><br>
+Quantity<br>
+<input type="text" name="quantity" id="order-input"><br><br>
+Address<br>
+<textarea name="address"></textarea><br><br>
+<input type="submit" value="Order Now!" id="submit-btn">
+</form>
+
+</fieldset>
+<div id="abt-us">
+<h1 align="center" id="abt-title">About</h1>
+<hr>
+<p id="abt-text">On the Insert tab, the galleries include items that are designed to coordinate with 
+the overall look of your document. You can use these galleries to insert tables, headers, footers, 
+lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams,
+they also coordinate with your current document look.You can easily change the formatting of selected
+text in the document text by choosing a look for the selected text from the Quick Styles gallery on the
+Home tab. You can also format text directly by using the other controls on the Home tab. Most controls
+ offer a choice of using the look from the current theme or using a format that you specify directly.
+To change the overall look of your document, choose new Theme elements on the Page Layout tab. To change
+ the looks available in the Quick Style gallery, use the Change Current Quick Style Set command. Both 
+ the Themes gallery 
+</p>
+</div>
+<div id="m-sweets">
+<h1 id="more-sweets">More Sweets</h1>
+</div>
+
+<div id="sweets">
+ <img src="1.png" id="sweet-pic" alt="1">
+<center>
+ <a href="#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+ </div>
+
+<div id="sweets">
+ <img src="2.png" id="sweet-pic" alt="2">
+ <center>
+ <a href="#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+ </div>
+
+<div id="sweets">
+ <img src="3.png" id="sweet-pic" alt="3">
+ <center>
+ <a href="#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+ </div>
+
+<div id="sweets"> 
+<img src="4.png" id="sweet-pic" alt="4">
+<center>
+ <a href="#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+ <img src="5.png" id="sweet-pic" alt="5">
+ <center>
+ <a href="#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+ </div>
+	
+
+</section>
+<footer>
+<div id="contact_us">
+<h1 id="contact_title">Contact us</h1>
+<address id="contact_detaile">Website : Sweetshop.com</address>
+<address id="contact_detaile">Phone No. : +91 8218528345 </address>
+<address id="contact_detaile">Email Id : shanukhan22769@gmail.com</address>
+<address id="contact_detaile">Address : town Sainthal Bareilly In U.P</address>
+
+</div>
+<div id="developer">Developed By : <u>Shanu Khan</u> </div>
+<div id="social_link">
+<h1 id="contact_title">Follow us</h1>
+<a href="https://www.facebook.com/zubairkhan.munnakhan?mibextid=ZbWKwL"><img src="fb.png" id="social_logo" alt="fb"></a>
+<a href="https://www.instagram.com/invites/contact/?igsh=1atxrcn5tkl94&utm_content=lfiqkf7"><img src="insta.png" id="social_logo" alt="insta"></a>
+<img src="tw.png" id="social_logo" alt="tw">
+</div>
+
+</footer>
+
+</div>
+<div id="net">
+<center><img src="oops.png" id="m"></center>
+<h1 id="c">No Internet</h1>
+
+</div>
+
+
+	<script> 
+
+
+		setInterval(demo,100)
+		function demo()
+		{
+			if(navigator.onLine==true)
+			{
+				document.getElementById("full_site").style.display="block";
+				document.getElementById("net").style.display="none";
+			}
+			else{
+				document.getElementById("full_site").style.display="none";
+				document.getElementById("net").style.display="block";
+			}
+		}
+		
+		demo()
+
+
+		document.onkeydown = function(a)
+		{
+			if( a.ctrlKey && a.keyCode == 85)
+			{
+				window.alert("ctrl+u  Not Allowed")
+				return false;
+			}
+			
+			
+			else if(a.ctrlKey && a.shiftKey && a.keyCode == 73)
+			{
+				window.alert("ctrl+shift+i Not allowed")
+				return false;
+			}
+			else if(a.ctrlKey && a.keyCode == 80)
+			{
+				window.alert("ctrl+p Not Allowed")
+				return false;
+			}
+		}
+
+		
+		history.pushState("null", "null", "welcome to srk")
+
+
+
+		
+	</script>
+
+	
+</body>
+
+</html>

@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="window.alert('Right Click Not Allowed');return false">
+<head>
+<title>
+sweetshop
+</title>
+<style>
+header{
+width:100%;
+height:50px;
+float:left;
+box-sizing:border-box;
+padding:6px;
+
+}
+
+body{
+padding:0;
+margin:0;
+}
+
+#brand{
+margin:0;
+pdding:0;
+font-family:sans-serif;
+float:left;
+margin-left:20px;
+}
+
+#tag_line{
+float:right;
+margin:0;
+pdding:0;
+margin-top:10px;
+font-family:century gothic;
+margin-right:24px;
+}
+
+nav{
+width:100%;
+height:100px;
+border-color:blue;
+border-style:solid;
+border-width:1px;
+float:left;
+background-color:blue;
+box-sizing:border-box;
+padding:30px;
+}
+#search{
+width:400px;
+height:40px;
+float:left;
+box-sizing:border-box;
+border:none;
+font-size:16px;
+padding:10px;
+}
+
+#search_btn{
+width:100px;
+height:40px;
+float:left;
+box-sizing:border-box;
+border:none;
+margin-left:3px;
+font-size:16px;
+}
+
+#menu_table{
+width:600px;
+height:40px;
+float:right;
+}
+
+#menu_item{
+background-color:white;
+width:20%;
+text-align:center;
+font-family:sans-serif;
+}
+
+a{
+text-decoration:none;
+color:black;
+}
+
+section{
+width:100%;
+height:1600px;
+float:left;
+border-color:blue;
+border-width:1px;
+border-style:solid;
+box-sizing:border-box;
+padding:30px;
+}
+
+#add{
+float:left;
+}
+
+#phone{
+float:right;
+}
+
+#popular-sweets-box{
+width:720px;
+height:550px;
+float:left;
+box-sizing:border-box;
+background-color:black;
+margin-top:30px;
+padding:27px;
+}
+
+#popular-sweet-title{
+color:white;
+font-family:sans-serif;
+text-align:center;
+font-size:30px;
+margin:0;
+padding:0;
+}
+
+#popular-sweet-imsges{
+width:300px;
+height:200px;
+margin:15px;
+border-width:5px;
+border-color:white;
+border-style:solid;
+box-sizing:border-box;
+}
+#rate-list-box{
+width:450px;
+height:550px;
+float:right;
+margin-top:30px;
+}
+#rate-header{
+height:50px;
+background-color:black;
+color:white;
+font-family:century gothic;
+font-size:25px;
+text-align:center;
+}
+#rate-content{
+background-color:blue;
+}
+#s-name{
+color:white;
+font-size:20px;
+font-family:century gothic;
+padding:10px;
+border-bottom-width:2px;
+border-bottom-style:solid;
+border-bottom-color:white;
+}
+#rate{
+list-style:none;
+}
+fieldset{
+width:690px;
+height:550px;
+float:left;
+margin-top:50px;
+border-width:1px;
+border-weight:solid;
+border-color:#ccc;
+padding:10px;
+
+}
+
+legend{
+font-size:30px;
+font-family:century gothic;
+font-weight:bold;
+
+}
+#order-online{
+font-size:17px;
+font-family:sans-serif;
+}
+#order-input{
+width:100%;
+height:35px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:5px;
+}
+
+textarea{
+width:100%;
+height:100px;
+box-sizing:border-box;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:5px;
+}
+
+#submit-btn{
+padding:10px;
+font-size:15px;
+float:right;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+background-color:white;
+}
+#abt-us{
+width:450px;
+height:550px;
+float:right;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-top:68px;
+padding:13px;
+box-sizing:border-box;
+}
+#abt-title{
+font-family:sans-serif;
+font-size:30px;
+}
+#abt-text{
+text-align:justify;
+font-family:sans-serif;
+line-height:25px;
+}
+hr{
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+}
+#m-sweets{
+width:100%;
+float:left;
+box-sizing:border-box;
+
+}
+
+#more-sweets{
+text-align:center;
+font-family:sans-serif;
+font-size:30px;
+margin-top:0;
+
+
+}
+#sweets{
+width:218px;
+height:250px;
+float:left;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+margin-right:46px;
+margin-bottom:46px;
+}
+#sweets-end{
+width:218px;
+height:250px;
+float:left;
+border-width:1px;
+border-style:solid;
+border-color:#ccc;
+}
+#sweet-pic{
+width:180px;
+height:150px;
+margin:19px;
+}
+#buy-btn{
+padding:10px;
+border-width:1px;
+border-color:#ccc;
+border-style:solid;
+background-color:white;
+width:100px;
+}
+footer{
+width:100%;
+height:250px;
+float:left;
+background-color:black;
+box-sizing:border-box;
+}
+
+#contact_us{
+width:400px;
+height:250px;
+float:left;
+box-sizing:border-box;
+padding:10px;
+padding-left:30px;
+
+}
+
+#contact_title{
+color:white;
+font-family:sans-serif;
+}
+#contact_detaile{
+color:white;
+font-size:20px;
+margin-bottom:10px;
+font-style:normal;
+}
+#social_link{
+width:300px;
+height:250px;
+float:right;
+box-sizing:border-box;
+padding-left:10px;
+}
+#social_logo{
+width:60px;
+}
+#developer{
+float:left;
+color:white;
+font-size:20px;
+font-family:'ubuntu',sans-serif;
+margin-top:200px;
+margin-left:150px;
+}
+
+td:hover{
+	border-start-end-radius:50px;
+	border-end-start-radius: 50px;
+	transition:0.5s;
+}
+u:hover{
+border-redius:40px;
+}
+
+
+</style>
+</head>
+<body>
+<header>
+<h1 id="brand">Sweetshop.com</h1>
+<p id=tag_line>The world's largest sweets & bakerise shop</p>
+</header>
+<nav>
+<form>
+<input id="search" type="search" name="search" placeholder="Search your sweets here">
+<input type="submit" value="search" id="search_btn">
+</form>
+
+<table id="menu_table">
+<tr>
+<td id="menu_item"><a href="index.html">Home</a></td>
+<td id="menu_item"><a href="sweets.html">Sweets</a></td>
+<td id="menu_item"><a href="bakeries.html">Bakeries</a></td>
+<td id="menu_item"><a href="index.html#abt-text">About us</a></td>
+<td id="menu_item"><a href="#contact_us">Contact us</a></td>
+</tr>
+</table>
+</nav>
+
+<section>
+<div id="m-sweets">
+<h1 id="more-sweets">Bakeries</h1>
+</div>
+
+<div id="sweets">
+<img src="a.jpeg" id="sweet-pic" alt="a">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="b.jpeg" id="sweet-pic" alt="b">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="c.jpeg" id="sweet-pic" alt="c">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="d.jpeg" id="sweet-pic" alt="d">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+<img src="e.jpeg" id="sweet-pic" alt="e">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="f.jpeg" id="sweet-pic" alt="f">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="g.jpeg" id="sweet-pic" alt="g">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="h.jpeg" id="sweet-pic" alt="h">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="i.jpeg" id="sweet-pic" alt="i">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+<img src="j.jpeg" id="sweet-pic" alt="j">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="k.jpeg" id="sweet-pic" alt="k">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="l.jpeg" id="sweet-pic" alt="l">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="m.jpeg" id="sweet-pic" alt="m">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="n.jpeg" id="sweet-pic" alt="n">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+<img src="o.jpeg" id="sweet-pic" alt="o">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="p.jpeg" id="sweet-pic" alt="p">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="q.jpeg" id="sweet-pic" alt="q">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="r.jpeg" id="sweet-pic" alt="r">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="s.jpeg" id="sweet-pic" alt="s">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+<img src="t.jpeg" id="sweet-pic" alt="t">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="u.jpeg" id="sweet-pic" alt="u">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="v.jpeg" id="sweet-pic" alt="v">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="w.jpeg" id="sweet-pic" alt="w">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets">
+<img src="x.jpeg" id="sweet-pic" alt="x">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+<div id="sweets-end">
+<img src="y.jpeg" id="sweet-pic" alt="y">
+ <center>
+ <a href="index.html#frm_box"><button id="buy-btn">Buy Now</button></a>
+ </center>
+</div>
+
+
+</section>
+<footer>
+<div id="contact_us">
+<h1 id="contact_title">Contact us</h1>
+<address id="contact_detaile">Website : Sweetshop.com</address>
+<address id="contact_detaile">Phone No. : +91 8218528345 </address>
+<address id="contact_detaile">Email Id : shanukhan22769@gmail.com</address>
+<address id="contact_detaile">Address : Town Sainthal Bareilly In U.P</address>
+
+</div>
+<div id="developer">Developed By : <u>Shanu Khan</u> </div>
+<div id="social_link">
+<h1 id="contact_title">Follow us</h1>
+<a href="https://www.facebook.com/zubairkhan.munnakhan?mibextid=ZbWKwL"><img src="fb.png" id="social_logo" alt="fb"></a>
+<a href="https://www.instagram.com/invites/contact/?igsh=1atxrcn5tkl94&utm_content=lfiqkf7"><img src="insta.png" id="social_logo" alt="insta"></a>
+<img src="tw.png" id="social_logo" alt="tw">
+</div>
+
+</footer>
+
+<script>
+
+	document.onkeydown = function(a)
+		{
+			if( a.ctrlKey && a.keyCode == 85)
+			{
+				window.alert("ctrl+u  Not Allowed")
+
+			}
+			return false;
+			
+		}
+
+
+	history.pushState("null", "null", "welcome to srk")
+</script>
+</body>
+
+</html>
